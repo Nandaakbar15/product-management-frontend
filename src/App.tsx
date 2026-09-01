@@ -12,6 +12,9 @@ import AddCategoriesPages from "./pages/dashboard/categoriesData/AddCategory";
 import EditBrandPages from "./pages/dashboard/brandData/EditBrand";
 import EditSupplierPages from "./pages/dashboard/supplierData/EditSupplier";
 import EditCategoriesPages from "./pages/dashboard/categoriesData/EditCategory";
+import ProductVariantDataPages from "./pages/dashboard/productVariants/IndexProductVariantData";
+import AddProductVariantPages from "./pages/dashboard/productVariants/AddProductVariants";
+import EditProductVariantPages from "./pages/dashboard/productVariants/EditProductVariants";
 
 export default function App() {
   return (
@@ -39,6 +42,20 @@ export default function App() {
         <Route path="/category_data" element={<CategoryDataPages />} />
         <Route path="/add_category" element={<AddCategoriesPages />} />
         <Route path="/edit_category/:id" element={<EditCategoriesPages />} />
+
+        {/* Routes Product Variant pages */}
+        <Route
+          path="/product_variant_data"
+          element={<ProductVariantDataPages />}
+        />
+        <Route
+          path="/add_product_variant"
+          element={<AddProductVariantPages />}
+        />
+        <Route
+          path="/edit_product_variant/:id"
+          element={<EditProductVariantPages />}
+        />
       </Routes>
     </BrowserRouter>
   );

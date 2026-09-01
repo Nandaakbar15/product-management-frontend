@@ -6,6 +6,7 @@ import {
   Ad,
   Container,
   LogOut,
+  Barcode,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -61,6 +62,13 @@ export default function Sidebar() {
           >
             <Container className="w-5 h-5" />
             Supplier
+          </a>
+          <a
+            href="/product_variant_data"
+            className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white rounded-lg transition-colors"
+          >
+            <Barcode className="w-5 h-5" />
+            Product Variant
           </a>
         </nav>
 
