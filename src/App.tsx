@@ -15,13 +15,20 @@ import EditCategoriesPages from "./pages/dashboard/categoriesData/EditCategory";
 import ProductVariantDataPages from "./pages/dashboard/productVariants/IndexProductVariantData";
 import AddProductVariantPages from "./pages/dashboard/productVariants/AddProductVariants";
 import EditProductVariantPages from "./pages/dashboard/productVariants/EditProductVariants";
+import LoginPages from "./pages/Login";
+import UserDataPages from "./pages/dashboard/userData/IndexUserData";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to={"/dashboard"} />} />
+        <Route path="/" element={<Navigate to={"/loginPage"} />} />
+        <Route path="/loginPage" element={<LoginPages />} />
+
         <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Routes users */}
+        <Route path="/user_data" element={<UserDataPages />} />
 
         {/* Routes product pages */}
         <Route path="/product_data" element={<ProductDataPages />} />
