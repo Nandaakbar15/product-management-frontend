@@ -1,75 +1,91 @@
-# React + TypeScript + Vite
+# Product Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi mengelola data produk berbasis website
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js (Frontend)
+- Express.js (Backend)
+- Tailwind CSS
+- TypeScript
+- PostgreSQL
 
-## React Compiler
+## Main Feature
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Manajemen data user
+- CRUD Data Produk
+- CRUD Data Supplier
+- CRUD Data Kategori
+- CRUD Data Varian Produk
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Screenshot App
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Halaman Login
+  ![Halaman Login](./public/images/screenshots%20app/Halaman%20Login.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<br>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Halaman Dashboard
+  ![Halaman Dashboard](./public/images/screenshots%20app/Halaman%20utama%20Product%20Management%20App.png)
+
+<br>
+
+- Halaman Data User
+  ![Halaman Data User](./public/images/screenshots%20app/Halaman%20Data%20user.png)
+
+<br>
+
+- Halaman Data Produk
+  ![Halaman Data Produk](./public/images/screenshots%20app/Halaman%20Data%20Produk.png)
+
+<br>
+
+- Halaman Data Kategori
+  ![Halaman Data Kategori](./public/images/screenshots%20app/Halaman%20Data%20Kategori.png)
+
+<br>
+
+- Halaman Data Brand
+  ![Halaman Data Brand](./public/images/screenshots%20app/Halaman%20Data%20Brand.png)
+
+<br>
+
+- Halaman Data Supplier
+  ![Halaman Data Supplier](./public/images/screenshots%20app/Halaman%20Data%20Supplier.png)
+
+<br>
+
+- Halaman Data Varian Produk
+  ![Halaman Data Varian Produk](./public/images/screenshots%20app/Halaman%20Data%20Varian%20Produk.png)
+
+<br>
+
+## Installation
+
+1. Clone Repository
 
 ```
+git clone https://github.com/Nandaakbar15/product-management-app-frontend
+```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+2. Masuk ke folder project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+cd product-management-app-frontend
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<br>
 
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Jalankan aplikasi:
+
+```
+npm run dev
 ```
